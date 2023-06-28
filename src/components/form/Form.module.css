@@ -1,0 +1,40 @@
+.contact {
+    height: 67vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    display: flex;
+    width: 40vw;
+    font-size: 16px;
+    padding: 10px;
+    margin: 15px;
+    background: #DDE6ED;
+}
+
+.formulario {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.button {
+    padding: 1rem 6em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #464646;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.text {
+    padding-bottom: 3rem;
+}

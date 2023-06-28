@@ -1,0 +1,131 @@
+.card, .allcards{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DDE6ED;
+    color: black;
+    }
+
+.fav {
+    color: #27374D;
+}
+.link {
+    text-decoration: none;
+    color: #DDE6ED;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr); 
+    place-content: center;
+    padding: 20px 0 ;
+    width: 100%;
+    
+}
+
+.allcards {
+    display: flex;
+    flex-direction: column;
+    text-align-last: center;
+    border: 2px solid #ccc;
+    width: 20vw;
+    margin: 8px !important;
+    padding: 16px ;
+    border-radius: 8px;
+    font-size: 0.5em;
+    border: 2px solid #526D82;
+}
+
+.favButton, .deleteButton {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #27374D;
+    align-self: center;
+    width: 70%;
+  }
+  .favButton:hover {
+    background-color: #435a6b;
+  }
+  .favButton:active {
+    top: 2px;
+  }
+
+.deleteButton {
+    background: #c70101;
+}
+
+.deleteButton:hover {
+    background: #a30000;
+}
+
+.favButton:hover {
+    background-color: #435a6b;
+  }
+
+.name {
+    padding-top: 15px;
+}
+
+.username {
+    font-size: 13px !important;
+    padding: 12px 0;
+    font-weight: 500;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 60px;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .smallHeight, .empty, .detalles  {
+    height: 68vh;
+  }
+
+  .detalles {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cdetalles {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    height: 40%;
+    place-content: space-around;
+    background: #526d82b4;
+
+  }
+
+  .dweb {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dweb p {
+    padding-right: 10px;
+  }
+  
+  
