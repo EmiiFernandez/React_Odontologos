@@ -1,0 +1,18 @@
+.container {
+    text-align: center;
+}
+
+.image {
+    width: 58%;
+}
+
+@media (max-width:1240px) {
+    .container {
+        padding: 38px 0;
+  
+    }
+
+    .image {
+        width: 100%;
+    }
+}

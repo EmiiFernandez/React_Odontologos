@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import NotFound from './components/not_found/NotFound'
 import Home from './routers/Home'
 import Favs from './routers/Favs'
 import Detail from './routers/Detail'
@@ -18,7 +19,7 @@ function App() {
             <Route path='favs' element={<Favs />} />
             <Route path='contacto' element={<Contact />} />
             <Route path='/detail/:id' element={<Detail />} />
-            <Route path='*' element={<div>Página no encontrada</div>} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />
       </div>
