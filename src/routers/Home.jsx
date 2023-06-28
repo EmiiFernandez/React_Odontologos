@@ -16,7 +16,6 @@ const Home = () => {
 
   return (
     <main style={styles}>
-      <p>Prueba</p>
       <h1 className={stylesCards.titulo}>Staff odontólogos</h1>
         <div className={stylesCards.container}>
           {dentistas.map((dentista) => (
