@@ -14,8 +14,8 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer} style={stylesTheme}>
-        <img src={image} width="40%" alt="DH" />
-        <h6>Emilia Fernández - 2023</h6>
+        <img className={styles.image} src={image} alt="DH" />
+        <h6 className={styles.name}>Emilia Fernández - 2023</h6>
     </footer>
   )
 }
