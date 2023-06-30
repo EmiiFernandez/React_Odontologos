@@ -136,7 +136,7 @@
     .container{
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
-      padding-bottom: 50px;
+      padding-bottom: 60px;
 
     }
 
