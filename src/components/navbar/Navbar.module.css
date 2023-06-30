@@ -34,6 +34,9 @@
 }
 
 .ilogo {
+    display: flex;
     width: 3rem;
     margin-left: 10px;
+    padding-right: 3px;
+
 }

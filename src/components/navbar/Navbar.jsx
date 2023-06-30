@@ -14,10 +14,10 @@ const Navbar = () => {
 
   return (
     <nav style={stylesTheme} className={styles.navbar}>
-      <div className={styles.logo}>
-        <img className={styles.ilogo} src={idiente} alt='Logo' />
-        <p>SoftDent</p>
-      </div>
+        <Link className={styles.logo} style={stylesTheme} to='./'>
+          <img className={styles.ilogo} src={idiente} alt='Logo' />
+          <p>SoftDent</p>
+        </Link>
       <Link className={styles.links} style={stylesTheme} to='./'>
         Home
       </Link>
