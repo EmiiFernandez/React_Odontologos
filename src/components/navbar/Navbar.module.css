@@ -16,7 +16,7 @@
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
-    background: #464646;
+    background: transparent;
     cursor: pointer;
     border-radius: 10px;
     user-select: none;

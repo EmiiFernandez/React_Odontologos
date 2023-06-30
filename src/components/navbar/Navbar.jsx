@@ -5,7 +5,7 @@ import { ThemeContext } from '../../contexts/ThemeContext'
 import idiente from '../../assets/diente1.png'
 
 const Navbar = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext)
+  const { theme, toggleTheme, imgTheme } = useContext(ThemeContext)
 
   const stylesTheme = {
     backgroundColor: theme === 'light' ? '#D8D9D9' : '#434243',
@@ -28,9 +28,9 @@ const Navbar = () => {
         Contacto
       </Link>
       <div className={styles.contButton}>
-      <button className={styles.button} onClick={toggleTheme}>
-        Modo {theme === 'light' ? 'oscuro' : 'claro'}
-      </button>
+        <button className={styles.button} onClick={toggleTheme}>
+          <img src={imgTheme} alt='Theme icon' />
+        </button>
       </div>
     </nav>
   )

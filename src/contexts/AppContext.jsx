@@ -9,6 +9,12 @@ const AppProvider = ({ children }) => {
   const [dentistas, setDentistas] = useState([])
   const [favs, setFavs] = useState([])
 
+  async function fetchDentistas() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    const jsonData = await response.json()
+    setDentistas(jsonData)
+  }
+
   useEffect(() => {
     fetchDentistas()
 
@@ -17,12 +23,6 @@ const AppProvider = ({ children }) => {
       setFavs(JSON.parse(storedFavs))
     }
   }, [])
-
-  async function fetchDentistas() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    const jsonData = await response.json()
-    setDentistas(jsonData)
-  }
 
   const addFav = (id) => {
     const selectedDentista = dentistas.find((dentista) => dentista.id === id)

@@ -116,6 +116,8 @@
     height: 40%;
     place-content: space-around;
     background: #526d82b4;
+    padding: 30px 50px;
+    border: 2px solid #526d822c
 
   }
 
