@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav style={stylesTheme} className={styles.navbar}>
-        <Link className={styles.logo} style={stylesTheme} to='./'>
+        <Link className={`${styles.logo} ${styles.links}`} style={stylesTheme} to='./'>
           <img className={styles.ilogo} src={idiente} alt='Logo' />
           <p>SoftDent</p>
         </Link>

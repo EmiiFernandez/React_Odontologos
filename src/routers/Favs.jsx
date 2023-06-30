@@ -1,5 +1,3 @@
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
 import React, { useContext } from 'react'
 import Card from '../components/card/Card'
 import { AppContext } from '../contexts/AppContext'
@@ -15,8 +13,8 @@ const Favs = () => {
   })
 
   const favoritos = uniqueFavs.map((fav) => (
-    <Link key={fav.id} className={styles.link} to={`/detail/${fav.id}`}> {/* Modificación aquí */}
-      <Card key={fav.id} dentista={fav} />
+    <Link key={fav.id} className={styles.link} to={`/detail/${fav.id}`}>
+      <Card dentista={fav} />
     </Link>
   ))
 
@@ -39,4 +37,5 @@ const Favs = () => {
     </div>
   )
 }
+
 export default Favs

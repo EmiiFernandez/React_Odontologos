@@ -1,0 +1,29 @@
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38.7rem;
+  }
+  
+  .circle {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    animation: animation 1.8s infinite ease-in-out;
+    margin: 2rem;
+  }
+  
+  @keyframes animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: #c0c0c0;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

@@ -11,7 +11,8 @@ const Card = ({ dentista }) => {
   const { id, name, username } = dentista
   const isFavorito = favs.some((fav) => fav.id === id)
 
-  const handleAddFav = () => {
+  const handleAddFav = (e) => {
+    e.preventDefault()
     if (isFavorito) {
       removeFav(id)
     } else {
