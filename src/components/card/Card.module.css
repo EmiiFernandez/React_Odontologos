@@ -35,7 +35,7 @@
 }
 
 .favButton, .deleteButton {
-    min-width: 130px;
+    min-width: 95px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
@@ -129,5 +129,34 @@
   .dweb p {
     padding-right: 10px;
   }
+
   
   
+  @media (max-width: 950px) {
+    .container{
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    .allcards {
+      width: 39vw;
+    }
+
+    .name {
+      font-size: 14px;
+    }
+
+    .cdetalles {
+      width: 60%;
+    }
+
+    .footer {
+      justify-content: space-evenly;    
+    }
+
+    .titulo {
+      font-size: 2.3rem;
+      padding-top: 30px;
+
+    }
+  }

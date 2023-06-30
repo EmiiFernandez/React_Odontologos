@@ -50,3 +50,18 @@
 .text {
     padding-bottom: 3rem;
 }
+
+@media (max-width: 950px) {
+    .text {
+        font-size: 30px;
+        padding-bottom: 2rem;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 20px;
+    }
+}

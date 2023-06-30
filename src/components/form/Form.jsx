@@ -41,7 +41,6 @@ const Form = (props) => {
   }
 
   function validateEmail(email) {
-    // Expresión regular para validar el formato de email
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   }
@@ -56,7 +55,7 @@ const Form = (props) => {
         ) : (
           <form className={styles.formulario} onSubmit={handleSubmit}>
             <h2 className={styles.text}>¿Querés trabajar con nosotros?</h2>
-            <label htmlFor="nombre">Nombre:</label>
+            <label className={styles.label}  htmlFor="nombre">Nombre:</label>
             <input
               className={styles.input}
               type="text"
@@ -66,7 +65,7 @@ const Form = (props) => {
               onChange={handleNombre}
             />
 
-            <label htmlFor="apellido">Apellido:</label>
+            <label className={styles.label} htmlFor="apellido">Apellido:</label>
             <input
               className={styles.input}
               type="text"
@@ -76,7 +75,7 @@ const Form = (props) => {
               onChange={handleApellido}
             />
 
-            <label htmlFor="email">Email:</label>
+            <label className={styles.label} htmlFor="email">Email:</label>
             <input
               className={styles.input}
               type="text"

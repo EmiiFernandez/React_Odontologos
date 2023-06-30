@@ -40,3 +40,13 @@
     padding-right: 3px;
 
 }
+
+@media (max-width: 950px) {
+    .navbar {
+        font-size: 13px;
+    }
+
+    .ilogo {
+        width: 35px;
+    }
+}
